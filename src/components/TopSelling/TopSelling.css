@@ -1,54 +1,45 @@
-.products {
+.top-selling {
   padding: 60px 80px;
 }
 
-.products h2 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 40px;
-}
-
-/* EXACT GRID LIKE DESIGN */
-.product-grid {
+/* USE SAME GRID AS PRODUCTS */
+.top-selling .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
 /* CARD */
-.product-card {
+.top-selling .product-card {
   width: 100%;
 }
 
 /* IMAGE */
-.product-card .img {
+.top-selling .product-card .img {
   width: 100%;
   height: 260px;
   margin-bottom: 12px;
   border-radius: 12px;
   background-color: #f9f9f9;
 
-  /* ✅ NEW ADDITIONS */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ✅ HOVER EFFECT (CLEAN + PROFESSIONAL) */
-.product-card .img:hover {
+.top-selling .product-card .img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* TITLE */
-.product-card h4 {
+.top-selling .product-card h4 {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 6px;
 }
 
 /* RATING */
-.rating {
+.top-selling .rating {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -56,29 +47,29 @@
   font-size: 14px;
 }
 
-.rating span {
+.top-selling .rating span {
   margin-left: 6px;
   color: #555;
 }
 
 /* PRICE */
-.price {
+.top-selling .price {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 6px;
 }
 
-.old {
+.top-selling .old {
   text-decoration: line-through;
   color: #999;
 }
 
-.new {
+.top-selling .new {
   font-weight: 700;
 }
 
-.discount {
+.top-selling .discount {
   background: #ffe3e3;
   color: #ff3333;
   font-size: 12px;
@@ -87,7 +78,7 @@
 }
 
 /* BUTTON */
-.btn-outline {
+.top-selling .btn-outline {
   display: block;
   margin: 40px auto 0;
   padding: 14px 40px;

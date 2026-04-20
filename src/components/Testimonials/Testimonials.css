@@ -1,0 +1,88 @@
+.testimonials {
+  padding: 60px 80px;
+}
+
+/* HEADER */
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* ARROWS */
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrows button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.arrows button:hover {
+  opacity: 0.6;
+}
+
+/* SCROLL AREA */
+.test-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.test-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.test-card {
+  min-width: 300px;
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* STARS */
+.stars {
+  color: #ffc633;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.user h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.verified {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+/* TEXT */
+.test-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}

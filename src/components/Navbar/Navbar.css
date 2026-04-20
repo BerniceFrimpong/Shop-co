@@ -3,32 +3,71 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  background: white;
+
+  /* STICKY */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
-  font-size: 28px;
   font-weight: 900;
+  font-size: 22px;
 }
 
+/* LINKS */
 .nav-links {
   display: flex;
-  gap: 40px;
   list-style: none;
+  gap: 25px;
 }
 
 .nav-links li {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.nav-icons {
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
-.nav-icons span {
-  margin-left: 20px;
-  font-size: 18px;
+.search {
+  padding: 10px 35px 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  width: 220px;
+}
+
+/* SEARCH ICON */
+.search-icon {
+  position: absolute;
+  right: 12px;
+  color: #888;
+  font-size: 16px;
+}
+
+/* ICONS */
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
   cursor: pointer;
 }

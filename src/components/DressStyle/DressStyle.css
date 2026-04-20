@@ -1,0 +1,39 @@
+.dress-style {
+  padding: 60px 80px;
+}
+
+/* GRID */
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD (FULL IMAGE LOOK) */
+.style-card {
+  height: 200px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.style-card:hover {
+  transform: scale(1.02);
+}
+
+/* TEXT OVER IMAGE */
+.style-card h3 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}

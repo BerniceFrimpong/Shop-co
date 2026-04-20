@@ -1,0 +1,12 @@
+.announcement {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.announcement span {
+  text-decoration: underline;
+  cursor: pointer;
+}

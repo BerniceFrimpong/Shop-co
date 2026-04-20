@@ -2,7 +2,7 @@ import "./Brands.css";
 
 const Brands = () => {
   return (
-    <div className="brands">
+    <div className="brands" id="brands">
       <h3>VERSACE</h3>
       <h3>ZARA</h3>
       <h3>GUCCI</h3>
