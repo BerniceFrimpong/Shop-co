@@ -1,8 +1,4 @@
-import shirt1 from "../../assets/images/shirt1.png";
-import jeans from "../../assets/images/jeans.png";
-import checkered from "../../assets/images/checkered-shirt.png";
-import striped from "../../assets/images/striped-shirt.png";
-
+import { newArrivals } from "../../data";
 import "./Products.css";
 import { FaStar } from "react-icons/fa";
 
@@ -13,103 +9,34 @@ const Products = () => {
         <h2 className="section-title">NEW ARRIVALS</h2>
 
         <div className="product-grid">
+          {newArrivals.map((product) => (
+            <div className="product-card" key={product.id}>
+              <div
+                className="img"
+                style={{
+                  backgroundImage: `url(${product.image})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></div>
 
-          <div className="product-card">
-            <div
-              className="img"
-              style={{
-                        backgroundImage: `url(${shirt1})`,
-                        backgroundSize: "contain",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center"
-}}
-            ></div>
+              <h4>{product.title}</h4>
 
-            <h4>T-SHIRT WITH TAPE DETAILS</h4>
+              <div className="rating">
+                {[...Array(product.stars)].map((_, index) => (
+                  <FaStar key={index} />
+                ))}
+                <span>{product.ratingText}</span>
+              </div>
 
-            <div className="rating">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-              <span>4.5/5</span>
+              <div className="price">
+                {product.oldPrice && <span className="old">${product.oldPrice}</span>}
+                <span className="new">${product.price}</span>
+                {product.discount && <span className="discount">{product.discount}</span>}
+              </div>
             </div>
-
-            <div className="price">
-              <span className="new">$120</span>
-            </div>
-          </div>
-
-          <div className="product-card">
-            <div
-              className="img"
-              style={{
-                backgroundImage: `url(${jeans})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-              }}
-            ></div>
-
-            <h4>SKINNY FIT JEANS</h4>
-
-            <div className="rating">
-              <FaStar /><FaStar /><FaStar /><FaStar />
-              <span>3.5/5</span>
-            </div>
-
-            <div className="price">
-              <span className="new">$240</span>
-            </div>
-          </div>
-
-          <div className="product-card">
-            <div
-              className="img"
-              style={{
-                backgroundImage: `url(${checkered})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-              }}
-            ></div>
-
-            <h4>CHECKERED SHIRT</h4>
-
-            <div className="rating">
-              <FaStar /><FaStar /><FaStar /><FaStar />
-              <span>4.5/5</span>
-            </div>
-
-            <div className="price">
-              <span className="old">$260</span>
-              <span className="new">$180</span>
-              <span className="discount">-20%</span>
-            </div>
-          </div>
-
-          <div className="product-card">
-            <div
-              className="img"
-              style={{
-                backgroundImage: `url(${striped})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-              }}
-            ></div>
-
-            <h4>SLEEVE STRIPED T-SHIRT</h4>
-
-            <div className="rating">
-              <FaStar /><FaStar /><FaStar /><FaStar />
-              <span>4.5/5</span>
-            </div>
-
-            <div className="price">
-              <span className="old">$160</span>
-              <span className="new">$130</span>
-              <span className="discount">-30%</span>
-            </div>
-          </div>
-
+          ))}
         </div>
 
         <button className="btn-outline">View All</button>
