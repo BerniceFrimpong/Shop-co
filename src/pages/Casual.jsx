@@ -188,42 +188,6 @@ const Casual = () => {
             </div>
           </div>
 
-          {/* <div className="casual-grid">
-            {filteredProducts.map((product) => (
-              <div className="product-card" key={product.id}>
-                <div
-                  className="img"
-                  style={{
-                    backgroundImage: `url(${product.image})`,
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-
-                <h4>{product.title.toUpperCase()}</h4>
-
-                <div className="rating">
-                  {[...Array(product.stars)].map((_, index) => (
-                    <FaStar key={index} />
-                  ))}
-                  <span>{product.ratingText}</span>
-                </div>
-
-                <div className="price">
-                  <span className="new">${product.price}</span>
-                  {product.oldPrice && <span className="old">${product.oldPrice}</span>}
-                  {product.discount && <span className="discount">{product.discount}</span>}
-                </div>
-              </div>
-            ))}
-            {filteredProducts.length === 0 && (
-              <div style={{ gridColumn: "span 3", textAlign: "center", padding: "40px", color: "#666" }}>
-                No products found matching your search.
-              </div>
-            )}
-          </div> */}
-
           <div className="pagination">
             <button className="page-btn">
               <FiChevronLeft /> Previous
