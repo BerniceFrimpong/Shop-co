@@ -1,0 +1,415 @@
+.product-details {
+  padding: 24px 80px 60px;
+}
+
+/* TOP SECTION */
+.pd-top {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* THUMBNAILS */
+.pd-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.pd-thumb {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.pd-thumb.active {
+  border: 2px solid #000;
+}
+
+/* MAIN IMAGE */
+.pd-main-image {
+  width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+/* INFO PANEL */
+.pd-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pd-info h1 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.pd-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffc633;
+  font-size: 16px;
+}
+
+.pd-rating span {
+  color: #555;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.pd-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 26px;
+}
+
+.pd-price .new {
+  font-weight: 800;
+}
+
+.pd-price .old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 18px;
+}
+
+.pd-price .discount {
+  background: #ffe3e3;
+  color: #ff3333;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.pd-desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.pd-divider {
+  border: none;
+  border-top: 1px solid #e6e6e6;
+}
+
+.pd-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pd-label {
+  font-size: 13px;
+  color: #999;
+}
+
+/* COLORS */
+.pd-colors {
+  display: flex;
+  gap: 12px;
+}
+
+.pd-color-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.2s;
+}
+
+.pd-color-circle.active {
+  border: 2px solid #000;
+}
+
+.check {
+  color: white;
+  font-size: 14px;
+}
+
+/* SIZES */
+.pd-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pd-size-btn {
+  padding: 10px 24px;
+  border-radius: 62px;
+  border: none;
+  background: #f0f0f0;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pd-size-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+/* QUANTITY + CART */
+.pd-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.pd-quantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f0f0f0;
+  padding: 12px 20px;
+  border-radius: 62px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pd-quantity button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.pd-add-btn {
+  flex: 1;
+  padding: 16px;
+  border-radius: 62px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pd-add-btn:hover {
+  background: #333;
+}
+
+/* TABS */
+.pd-tabs {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 32px;
+  gap: 0;
+}
+
+.pd-tab {
+  background: none;
+  border: none;
+  padding: 14px 32px;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s;
+}
+
+.pd-tab.active {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+}
+
+/* TAB CONTENT */
+.pd-tab-content {
+  padding: 24px 0;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+/* REVIEWS SECTION */
+.pd-reviews-section {
+  margin-bottom: 60px;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.reviews-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reviews-header h3 span {
+  font-weight: 400;
+  color: #888;
+  font-size: 16px;
+}
+
+.reviews-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.reviews-filter-btn {
+  padding: 10px 16px;
+  border-radius: 62px;
+  border: 1px solid #e6e6e6;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.write-review-btn {
+  padding: 10px 20px;
+  border-radius: 62px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.review-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  color: #ffc633;
+}
+
+.review-dots {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.verified-badge {
+  background: #01AB31;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.review-date {
+  font-size: 13px;
+  color: #999;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 40px;
+  border-radius: 62px;
+  border: 1px solid #000;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* RELATED PRODUCTS */
+.pd-related {
+  margin-top: 60px;
+}
+
+.pd-related h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .product-details {
+    padding: 20px;
+  }
+
+  .pd-top {
+    flex-wrap: wrap;
+  }
+
+  .pd-thumbnails {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .pd-main-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

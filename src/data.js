@@ -12,7 +12,7 @@ import top4 from "./assets/images/top4.png";
 
 export const newArrivals = [
   {
-    id: 1,
+    id: 101,
     image: shirt1,
     title: "T-SHIRT WITH TAPE DETAILS",
     stars: 5,
@@ -22,7 +22,7 @@ export const newArrivals = [
     discount: null,
   },
   {
-    id: 2,
+    id: 102,
     image: jeans1,
     title: "SKINNY FIT JEANS",
     stars: 4,
@@ -32,7 +32,7 @@ export const newArrivals = [
     discount: null,
   },
   {
-    id: 3,
+    id: 103,
     image: checkered,
     title: "CHECKERED SHIRT",
     stars: 4,
@@ -42,7 +42,7 @@ export const newArrivals = [
     discount: "-20%",
   },
   {
-    id: 4,
+    id: 104,
     image: striped,
     title: "SLEEVE STRIPED T-SHIRT",
     stars: 4,
@@ -55,7 +55,7 @@ export const newArrivals = [
 
 export const topSelling = [
   {
-    id: 1,
+    id: 201,
     image: top1,
     title: "VERTICAL STRIPED SHIRT",
     stars: 5,
@@ -65,7 +65,7 @@ export const topSelling = [
     discount: "-20%",
   },
   {
-    id: 2,
+    id: 202,
     image: top2,
     title: "COURAGE GRAPHIC T-SHIRT",
     stars: 4,
@@ -75,7 +75,7 @@ export const topSelling = [
     discount: null,
   },
   {
-    id: 3,
+    id: 203,
     image: top3,
     title: "LOOSE FIT BERMUDA SHORTS",
     stars: 3,
@@ -85,7 +85,7 @@ export const topSelling = [
     discount: null,
   },
   {
-    id: 4,
+    id: 204,
     image: top4,
     title: "FADED SKINNY JEANS",
     stars: 4,
@@ -97,7 +97,7 @@ export const topSelling = [
 ];
 export const casualProducts = [
   {
-    id: 1,
+    id: 301,
     image: top2,
     title: "Gradient Graphic T-shirt",
     stars: 5,
@@ -107,7 +107,7 @@ export const casualProducts = [
     discount: null,
   },
   {
-    id: 2,
+    id: 302,
     image: shirt1,
     title: "Polo with Tipping Details",
     stars: 4,
@@ -117,7 +117,7 @@ export const casualProducts = [
     discount: null,
   },
   {
-    id: 3,
+    id: 303,
     image: striped,
     title: "Black Striped T-shirt",
     stars: 5,
@@ -127,7 +127,7 @@ export const casualProducts = [
     discount: "-30%",
   },
   {
-    id: 4,
+    id: 304,
     image: jeans1,
     title: "Skinny Fit Jeans",
     stars: 4,
@@ -137,7 +137,7 @@ export const casualProducts = [
     discount: "-20%",
   },
   {
-    id: 5,
+    id: 305,
     image: checkered,
     title: "Checkered Shirt",
     stars: 4,
@@ -147,7 +147,7 @@ export const casualProducts = [
     discount: null,
   },
   {
-    id: 6,
+    id: 306,
     image: striped,
     title: "Sleeve Striped T-shirt",
     stars: 4,
@@ -157,7 +157,7 @@ export const casualProducts = [
     discount: "-30%",
   },
   {
-    id: 7,
+    id: 307,
     image: top1,
     title: "Vertical Striped Shirt",
     stars: 5,
@@ -167,7 +167,7 @@ export const casualProducts = [
     discount: "-20%",
   },
   {
-    id: 8,
+    id: 308,
     image: top2,
     title: "Courage Graphic T-shirt",
     stars: 4,
@@ -177,7 +177,7 @@ export const casualProducts = [
     discount: null,
   },
   {
-    id: 9,
+    id: 309,
     image: top3,
     title: "Loose Fit Bermuda Shorts",
     stars: 3,

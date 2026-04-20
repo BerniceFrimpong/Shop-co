@@ -189,38 +189,54 @@ const Casual = () => {
           </div>
 
           {/* PRODUCT GRID */}
-<div className="casual-grid">
-  {filteredProducts.map((product) => (
-    <div className="product-card" key={product.id}>
-      
-      <img src={product.image} alt={product.title} />
+          <div className="casual-grid">
+            {filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                to={`/product/${product.id}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <div className="product-card">
+                  <img src={product.image} alt={product.title} />
 
-      <h4>{product.title}</h4>
+                  <h4>{product.title}</h4>
 
-      <div className="stars">
-        {Array(product.stars)
-          .fill()
-          .map((_, i) => (
-            <FaStar key={i} />
-          ))}
-        <span>{product.ratingText}</span>
-      </div>
+                  <div className="stars">
+                    {Array(product.stars)
+                      .fill()
+                      .map((_, i) => (
+                        <FaStar key={i} />
+                      ))}
+                    <span>{product.ratingText}</span>
+                  </div>
 
-      <div className="price">
-        <span className="new-price">${product.price}</span>
+                  <div className="price">
+                    <span className="new-price">${product.price}</span>
 
-        {product.oldPrice && (
-          <span className="old-price">${product.oldPrice}</span>
-        )}
+                    {product.oldPrice && (
+                      <span className="old-price">${product.oldPrice}</span>
+                    )}
 
-        {product.discount && (
-          <span className="discount">{product.discount}</span>
-        )}
-      </div>
-
-    </div>
-  ))}
-</div>
+                    {product.discount && (
+                      <span className="discount">{product.discount}</span>
+                    )}
+                  </div>
+                </div>
+              </Link>
+            ))}
+            {filteredProducts.length === 0 && (
+              <div
+                style={{
+                  gridColumn: "span 3",
+                  textAlign: "center",
+                  padding: "40px",
+                  color: "#666",
+                }}
+              >
+                No products found matching your search.
+              </div>
+            )}
+          </div>
 
           <div className="pagination">
             <button className="page-btn">
