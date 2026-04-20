@@ -188,6 +188,40 @@ const Casual = () => {
             </div>
           </div>
 
+          {/* PRODUCT GRID */}
+<div className="casual-grid">
+  {filteredProducts.map((product) => (
+    <div className="product-card" key={product.id}>
+      
+      <img src={product.image} alt={product.title} />
+
+      <h4>{product.title}</h4>
+
+      <div className="stars">
+        {Array(product.stars)
+          .fill()
+          .map((_, i) => (
+            <FaStar key={i} />
+          ))}
+        <span>{product.ratingText}</span>
+      </div>
+
+      <div className="price">
+        <span className="new-price">${product.price}</span>
+
+        {product.oldPrice && (
+          <span className="old-price">${product.oldPrice}</span>
+        )}
+
+        {product.discount && (
+          <span className="discount">{product.discount}</span>
+        )}
+      </div>
+
+    </div>
+  ))}
+</div>
+
           <div className="pagination">
             <button className="page-btn">
               <FiChevronLeft /> Previous
