@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Cart.css";
 import { casualProducts } from "../data";
 
-/* ✅ REPLACED THIS PART ONLY */
 const cartItems = casualProducts.slice(0, 3).map((item) => ({
   ...item,
   size: "Large",
@@ -19,7 +18,6 @@ const Cart = () => {
 
   return (
     <div className="cart-page">
-
       {/* BREADCRUMB */}
       <div className="cart-breadcrumb">
         <Link to="/">Home</Link> <span>&gt;</span> Cart
@@ -28,12 +26,10 @@ const Cart = () => {
       <h1 className="cart-title">YOUR CART</h1>
 
       <div className="cart-layout">
-
         {/* LEFT */}
         <div className="cart-items">
           {cartItems.map((item) => (
             <div className="cart-item" key={item.id}>
-
               <img src={item.image} alt={item.title} />
 
               <div className="cart-info">
@@ -52,14 +48,12 @@ const Cart = () => {
                   <FiPlus />
                 </div>
               </div>
-
             </div>
           ))}
         </div>
 
         {/* RIGHT */}
         <div className="cart-summary">
-
           <h2>Order Summary</h2>
 
           <div className="summary-row">
@@ -89,12 +83,8 @@ const Cart = () => {
             <button>Apply</button>
           </div>
 
-          <button className="checkout-btn">
-            Go to Checkout →
-          </button>
-
+          <button className="checkout-btn">Go to Checkout →</button>
         </div>
-
       </div>
     </div>
   );

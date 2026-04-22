@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { casualProducts, newArrivals, topSelling } from "../../data";
 import "./ProductDetails.css";
 
@@ -56,6 +56,7 @@ const reviews = [
 ];
 
 const ProductDetails = ({ product }) => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("reviews");
   const [selectedColor, setSelectedColor] = useState(0);
   const [selectedSize, setSelectedSize] = useState("Large");
@@ -177,7 +178,7 @@ const ProductDetails = ({ product }) => {
               <span>{quantity}</span>
               <button onClick={() => setQuantity((q) => q + 1)}>+</button>
             </div>
-            <button className="pd-add-btn">Add to Cart</button>
+            <button className="pd-add-btn" onClick={() => navigate("/cart")}>Add to Cart</button>
           </div>
         </div>
       </div>
