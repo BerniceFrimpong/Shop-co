@@ -37,7 +37,7 @@ const ProductDetail = () => {
         <span> {" > "} </span>
 
         <span style={{ color: "#000", fontWeight: "600" }}>
-          {product.title}
+          Product Detail
         </span>
       </div>
 
