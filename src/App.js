@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Casual from "./pages/Casual";
+import Cart from "./pages/Cart";
 import ProductDetail from "./pages/ProductDetail";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -15,10 +16,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/casual" element={<Casual />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </Router>
   );
 }
 
-export default App;
+export default App;

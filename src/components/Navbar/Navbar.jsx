@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { FiSearch, FiShoppingCart, FiUser } from "react-icons/fi";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -58,7 +59,9 @@ const Navbar = () => {
         </div>
 
         <div className="nav-icons">
-          <FiShoppingCart />
+           <Link to="/cart">
+             <FiShoppingCart />
+               </Link>
           <FiUser />
         </div>
 
